@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --brand:#B33030;
+    --body: #606060;
+    --dark: #19282F;
+    --border-radius: 4px;
+    --shadow: 0px 0px 60px rgba(0,0,0,0.14);
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    color: var(--dark);
+  
+}
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+    transition: all 0.4s linear;
+}
+
+a:hover{
+    color: var(--brand);
+}
+
+a.custom-link{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+img{
+    width: 100%;
+}
+
+
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.intro-section{
+    margin-bottom: 35px;
+    text-align: center;   
+}
+
+
+.intro-section p{
+    max-width: 500px;
+    margin: auto;
+}
+/* Navbar */
+.navbar.bg-white{
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: var(--brand);
+
+}
+/* Hero */
+
+#hero{
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://cdn.pixabay.com/photo/2017/06/29/01/02/business-man-2452805_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+     align-items: center;
+    background-attachment: fixed;
+
+}
+
+#hero h1,
+#hero p{
+    color: white;
+}
+
+#hero p{
+    max-width: 500px;
+    margin: 12px auto 28px auto;
+}
+
+#hero h1{
+    font-weight: 700;
+}
+
+#hero .input-group{
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+}
+
+#hero .input-group input{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#hero .input-group input:focus{
+    box-shadow: none;
+}
+
+#hero .input-group input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* button */
+
+.btn{
+    padding: 12px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+}
+
+
+.btn-brand{
+    background-color: var(--brand);
+    color: white; 
+}
+
+.btn-brand:hover{
+    color: white;  
+}
+
+
+/* services */
+
+.custom-card{
+    transition: all 0.4s ease;
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+
+.custom-card:hover{
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+}
+
+
+.service{
+    padding: 44px 28px;
+    text-align: center;
+}
+
+.icon-box{
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: white;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.service h5{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.service p{
+    font-size: 14px;
+}
+
+
+/* CTA */
+
+#cta{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://cdn.pixabay.com/photo/2017/06/29/01/02/business-man-2452805_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#cta h2,
+#cta p{
+    color: white;
+}
+
+
+/* protfolio */
+
+.project-wrapper{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-wrapper img{ 
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s ease;
+}
+
+.project-wrapper .btn{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translate(-50% -50%);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.project-wrapper:hover .btn-brand{
+    top: 50%;
+    opacity: 1;
+
+}
+
+.project-wrapper:hover img{ 
+    transform: scale(1.2);
+    filter: blur(2px);
+}
+
+
+/* Testimonial section */
+
+#testimonial{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url(https://cdn.pixabay.com/photo/2017/06/29/01/02/business-man-2452805_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#testimonial .intro-section h1,
+#testimonial .intro-section p{
+    color: white;
+}
+
+.review .stars{
+    color: orange;
+}
+
+.review p{
+    color: whitesmoke;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.review{
+    padding: 14px;
+    border: 1px solid rgb(151, 149, 149);
+    border-radius: var(b);
+}
+
+.review h6,
+.review small
+{
+    color: white;
+}
+
+.review span{
+    color: var(--brand);
+}
+.review img{
+    width: 50px !important;
+    border-radius: 100px;
+}
+
+#testimonial .owl-dot span{
+    background-color: transparent;
+    border: 2px solid white;
+    width: 12px;
+    height: 12px;
+    transition: all 0.6s ease;
+}
+
+
+#testimonial .owl-dot.active span{
+
+    width: 30px;
+    background-color: var(--brand);
+    border-color: var(--brand);
+}
+
+
+/* team */
+.team-member{
+    text-align: center;
+}
+
+.team-member h5{
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.team-member .team-member-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member img{
+    transition: all 0.5s ease;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links a{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    display: flex;
+    color: var(--brand);
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.social-links a:hover{
+    background-color: var(--brand);
+    color: white;
+}
+
+.team-member .social-links{
+    position: absolute;
+    bottom: 40px;
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.team-member:hover .social-links{
+    bottom: 20px;
+    opacity: 1;
+}
+
+.team-member:hover img{
+    transform: scale(1.1);
+}
+
+
+
+/* Milestone */
+#milestone{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url(https://cdn.pixabay.com/photo/2017/06/29/01/02/business-man-2452805_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.counter .divider{
+   width: 70px;
+   height: 2px;
+   background-color: var(--brand);
+   display: inline-block;
+   margin-top: 8px;
+   margin-bottom: 8px;
+}
+
+.counter h1{
+    line-height: 1;
+}
+
+.counter h1,
+.counter p{
+    color: white;
+}
+
+/* Blog */
+
+.blog-post{
+    text-align: center;
+}
+
+.blog-post img{
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.blog-post .tag{
+    padding: 4px 12px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: var(--brand);
+    color: white;
+    border-radius: 3px;
+}
+
+.blog-post-content{
+    padding: 28px;
+}
+
+.blog-post h4{
+    margin-top: 12px;
+}
+
+/* contact */
+
+#contact input.form-control{
+    height: 49px;
+}
+
+#contact .form-control{
+    background-color: white;
+    border-color: white;
+}
+
+#contact .form-control:focus{
+    box-shadow: none;
+    border-color: var(--brand);
+}
+
+#contact .map{
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+
+/* Footer */
+
+footer p,
+footer ul li a{
+    color: rgba(255,255,255,0.6);
+}
+
+footer h6{
+    color: white;
+    margin-bottom: 16px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-top{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url(https://cdn.pixabay.com/photo/2017/06/29/01/02/business-man-2452805_640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.footer-top .logo-footer{
+    margin-bottom: 16px; 
+    width: 100px;  
+}
+
+.footer-bottom{
+    background-color: var(--brand);
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
